@@ -1,0 +1,26 @@
+#top {
+    background-color: red;
+    color: red;
+    position: relative;
+    left: 403px; 
+}
+
+#middle {
+    background-color: blue;
+    color: blue;
+    position: relative;
+    left: -200px;   
+}
+
+#bottom {
+    background-color: yellow;
+    color: yellow;
+    position: relative;
+    right: 205px; 
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block; 
+}

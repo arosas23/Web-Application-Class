@@ -1,0 +1,24 @@
+#top {
+    background-color: #56638A;
+    border: solid #272D3F 10px;
+    padding: 20px;
+    margin-left: 0;
+}
+
+#middle {
+    background-color: #FE938C;
+    border: solid #FD5549 20px;
+    margin-left: 260px;
+}
+
+#bottom {
+    background-color: #44A1A0;
+    border: solid #307372 10px;
+    margin-left: 500px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
