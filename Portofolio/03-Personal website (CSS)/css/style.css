@@ -1,0 +1,156 @@
+body {
+    background: #E6F7F9;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 5.5rem;
+    color: #007C91;
+    margin: 50px
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: #01665c;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #009688;
+}
+
+hr {
+    border: none;                  
+    border-top: 6px dotted #EAF6F6; 
+    border-bottom: none;           
+    width: 4%;                     
+    margin-left: 100px;            
+    margin-right: 100px;  
+}
+
+a{
+    text-decoration: none; 
+    font-weight: bold;    
+    color: inherit;
+}
+
+a:hover {
+    color: #009688;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 90%;
+    background-color: white;
+    padding: 5px;
+    object-fit: contain;
+    display: inline-block;
+    
+}
+
+div:nth-child(even) {
+    background-color: rgb(184, 239, 247); 
+    padding: 20px;
+}
+
+.famous-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.famous-member {
+    background: #ffffff !important; 
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.famous-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.famous-member .role {
+    font-weight: bold;
+    color: #83C5BE; 
+    margin-bottom: 10px;
+}
+
+.famous-member .bio {
+    font-size: 14px;
+    color: #555;
+}
+
+form {
+    border: 3px dotted #006D77; 
+    background-color: #c8f1ed;  
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+input, select, textarea {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #EDF6F9; 
+}
+
+button {
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #006D77;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #004e54;
+}
+
+.mountain {
+    position: static;
+    display:block;
+    margin: 0 auto;
+    width: 200px;
+    z-index: 1;
+}
+
+.cloud {
+    position: sticky;
+    top: 30px; 
+    width: 120px; 
+    z-index: 2;
+}
+
+.cloud {
+    position: sticky;
+    top: 30px; 
+    width: 120px; 
+    z-index: 2;
+}
+
+.cloud1 {
+    left: 10vw;
+    position: sticky;
+}
+
+.cloud2 {
+    left: 70vw;
+    position: sticky;
+}
