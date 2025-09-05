@@ -1,0 +1,46 @@
+body {
+  margin-top: 30px;
+  background: white;
+}
+
+.mondrian {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px;
+  gap: 2px;
+  width: max-content;
+  background: black;
+  padding: 2px;
+}
+
+.mondrian div {
+  border: 1px solid black;
+}
+
+.red {
+  background: red;
+  grid-column: span 2;
+}
+
+.yellow {
+  background: yellow;
+  grid-row: span 1;
+}
+
+.blue {
+  background: blue;
+  grid-row: span 1;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+}
+
+.back-link {
+    display: block;
+    margin-top: 30px;
+}

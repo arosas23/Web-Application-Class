@@ -1,7 +1,13 @@
+.container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
 #top {
     background-color: red;
     color: red;
-    display: absolute;
+    position: absolute;
     top: 400px;
     left: 400px;
 }
@@ -9,7 +15,7 @@
 #middle {
     background-color: blue;
     color: blue; 
-    display: absolute;
+    position: absolute;
     top:200px;
     left: 200px;
 }
@@ -17,7 +23,7 @@
 #bottom {
     background-color: yellow;
     color: yellow;
-    display: absolute;
+    position: absolute;
     top: 0px;
     left: 0px;
 }
