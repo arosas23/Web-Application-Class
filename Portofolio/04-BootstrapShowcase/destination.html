@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS (una sola versión) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/destination.css" />
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <title>Destination</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="./index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Favorite Spots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./destination.html#guadalajara">Guadalajara</a></li>
+                            <li><a class="dropdown-item" href="./destination.html#tokyo">Tokyo</a></li>
+                            <li><a class="dropdown-item" href="./destination.html#london">London</a></li>
+                            <li><a class="dropdown-item" href="./destination.html#barcelona">Barcelona</a></li>
+                            <li><a class="dropdown-item" href="./destination.html#nyc">New York City</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="position-relative overflow-hidden">
+        <div class="d-flex min-vh-100" lc-helper="video-bg">
+            <video style="z-index:1;object-fit: cover; object-position: 50% 50%;"
+                class="position-absolute w-100 min-vh-100" autoplay preload muted loop playsinline>
+                <source src="./videos/clouds.mp4" type="video/mp4">
+            </video>
+            <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+                <div class="lc-block mb-4">
+                    <h1 class="display-1">My Favorite Spots</h1>
+                </div>
+                <div class="lc-block mt-5">
+                    <svg class="arrow-down" width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        onclick="document.querySelector('#main-content').scrollIntoView({ behavior: 'smooth' });">
+                        <path fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        <path fill-rule="evenodd"
+                            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="main-content">
+        <br><br>
+
+        <!-- GUADALAJARA -->
+        <section class="mb-5">
+            <a id="guadalajara"></a>
+            <h2 class="mb-4">Guadalajara</h2>
+            <div class="row align-items-center mb-3">
+                <div class="col-md-5">
+                    <div id="carouselGDL" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselGDL" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselGDL" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselGDL" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/gdl.jpg" class="d-block w-100" alt="GDL01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gdl02.jpg" class="d-block w-100" alt="GDL02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gdl03.jpg" class="d-block w-100" alt="GDL03">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGDL"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGDL"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <p class="destination-description"> Guadalajara is the cultural heart of Mexico, famous for mariachi
+                        music, tequila, and beautiful colonial architecture. The city blends tradition with modern life
+                        and vibrant festivals.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center fun-facts">
+                <div class="col-md-8">
+                    <h3>Fun Facts:</h3>
+                    <div class="accordion" id="accordionGuadalajara">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGuadalajara1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseGuadalajara1" aria-expanded="false"
+                                    aria-controls="collapseGuadalajara1">
+                                    Province/State
+                                </button>
+                            </h2>
+                            <div id="collapseGuadalajara1" class="accordion-collapse collapse"
+                                aria-labelledby="headingGuadalajara1" data-bs-parent="#accordionGuadalajara">
+                                <div class="accordion-body">
+                                    <p>Jalisco</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGuadalajara2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseGuadalajara2" aria-expanded="false"
+                                    aria-controls="collapseGuadalajara2">
+                                    Country
+                                </button>
+                            </h2>
+                            <div id="collapseGuadalajara2" class="accordion-collapse collapse"
+                                aria-labelledby="headingGuadalajara2" data-bs-parent="#accordionGuadalajara">
+                                <div class="accordion-body"><p>Mexico</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGuadalajara3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseGuadalajara3" aria-expanded="false"
+                                    aria-controls="collapseGuadalajara3">
+                                    Population
+                                </button>
+                            </h2>
+                            <div id="collapseGuadalajara3" class="accordion-collapse collapse"
+                                aria-labelledby="headingGuadalajara3" data-bs-parent="#accordionGuadalajara">
+                                <div class="accordion-body"><p>~1.5 million (metro)</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGuadalajara4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseGuadalajara4" aria-expanded="false"
+                                    aria-controls="collapseGuadalajara4">
+                                    Latitude & Longitude
+                                </button>
+                            </h2>
+                            <div id="collapseGuadalajara4" class="accordion-collapse collapse"
+                                aria-labelledby="headingGuadalajara4" data-bs-parent="#accordionGuadalajara">
+                                <div class="accordion-body"><p>20.6597° N, 103.3496° W</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGuadalajara5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseGuadalajara5" aria-expanded="false"
+                                    aria-controls="collapseGuadalajara5">
+                                    Fact
+                                </button>
+                            </h2>
+                            <div id="collapseGuadalajara5" class="accordion-collapse collapse"
+                                aria-labelledby="headingGuadalajara5" data-bs-parent="#accordionGuadalajara">
+                                <div class="accordion-body"><p>Birthplace of mariachi and tequila.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="./images/mexico_flag.jpg" alt="México" class="destination-img" width="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- TOKYO -->
+        <section class="mb-5">
+            <a id="tokyo"></a>
+            <h2 class="mb-4">Tokyo</h2>
+            <div class="row align-items-center mb-3">
+                <div class="col-md-5">
+                    <div id="carouselTokyo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/tokyo.jpg" class="d-block w-100" alt="Tokyo01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/tokyo02.jpg" class="d-block w-100" alt="Tokyo02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/tokyo03.jpg" class="d-block w-100" alt="Tokyo03">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTokyo"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTokyo"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="destination-description"> Tokyo is a dynamic city where ancient shrines coexist with
+                        futuristic skyscrapers. It’s known for its cuisine, cutting-edge technology, and bustling urban
+                        life.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center fun-facts">
+                <div class="col-md-8">
+                    <h3>Fun Facts:</h3>
+                    <div class="accordion" id="accordionTokyo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTokyo1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTokyo1" aria-expanded="false" aria-controls="collapseTokyo1">
+                                    Province/State
+                                </button>
+                            </h2>
+                            <div id="collapseTokyo1" class="accordion-collapse collapse" aria-labelledby="headingTokyo1"
+                                data-bs-parent="#accordionTokyo">
+                                <div class="accordion-body"><p>Tokyo Metropolis</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTokyo2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTokyo2" aria-expanded="false" aria-controls="collapseTokyo2">
+                                    Country
+                                </button>
+                            </h2>
+                            <div id="collapseTokyo2" class="accordion-collapse collapse" aria-labelledby="headingTokyo2"
+                                data-bs-parent="#accordionTokyo">
+                                <div class="accordion-body"><p>Japan</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTokyo3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTokyo3" aria-expanded="false" aria-controls="collapseTokyo3">
+                                    Population
+                                </button>
+                            </h2>
+                            <div id="collapseTokyo3" class="accordion-collapse collapse" aria-labelledby="headingTokyo3"
+                                data-bs-parent="#accordionTokyo">
+                                <div class="accordion-body"><p>~37 million (metro)</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTokyo4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTokyo4" aria-expanded="false" aria-controls="collapseTokyo4">
+                                    Latitude & Longitude
+                                </button>
+                            </h2>
+                            <div id="collapseTokyo4" class="accordion-collapse collapse" aria-labelledby="headingTokyo4"
+                                data-bs-parent="#accordionTokyo">
+                                <div class="accordion-body"><p>35.6762° N, 139.6503° E</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTokyo5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTokyo5" aria-expanded="false" aria-controls="collapseTokyo5">
+                                    Fact
+                                </button>
+                            </h2>
+                            <div id="collapseTokyo5" class="accordion-collapse collapse" aria-labelledby="headingTokyo5"
+                                data-bs-parent="#accordionTokyo">
+                                <div class="accordion-body"><p>Home to the busiest train station in the world (Shinjuku).</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="./images/japan_flag.jpg" alt="Japan" class="destination-img" width="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- LONDON -->
+        <section class="mb-5">
+            <a id="london"></a>
+            <h2 class="mb-4">London</h2>
+            <div class="row align-items-center mb-3">
+                <div class="col-md-5">
+                    <div id="carouselLondon" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/london.jpg" class="d-block w-100" alt="London01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/london02.jpg" class="d-block w-100" alt="London02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/london03.jpg" class="d-block w-100" alt="London03">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLondon"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselLondon"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="destination-description"> London is a historic yet modern city, home to landmarks like Big
+                        Ben, the London Eye, and Buckingham Palace. It offers a unique mix of culture, history, and global
+                        influence.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center fun-facts">
+                <div class="col-md-8">
+                    <h3>Fun Facts:</h3>
+                    <div class="accordion" id="accordionLondon">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLondon1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLondon1" aria-expanded="false" aria-controls="collapseLondon1">
+                                    Province/State
+                                </button>
+                            </h2>
+                            <div id="collapseLondon1" class="accordion-collapse collapse" aria-labelledby="headingLondon1"
+                                data-bs-parent="#accordionLondon">
+                                <div class="accordion-body"><p>Greater London</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLondon2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLondon2" aria-expanded="false" aria-controls="collapseLondon2">
+                                    Country
+                                </button>
+                            </h2>
+                            <div id="collapseLondon2" class="accordion-collapse collapse" aria-labelledby="headingLondon2"
+                                data-bs-parent="#accordionLondon">
+                                <div class="accordion-body"><p>United Kingdom</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLondon3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLondon3" aria-expanded="false" aria-controls="collapseLondon3">
+                                    Population
+                                </button>
+                            </h2>
+                            <div id="collapseLondon3" class="accordion-collapse collapse" aria-labelledby="headingLondon3"
+                                data-bs-parent="#accordionLondon">
+                                <div class="accordion-body"><p>~9 million (metro)</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLondon4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLondon4" aria-expanded="false" aria-controls="collapseLondon4">
+                                    Latitude & Longitude
+                                </button>
+                            </h2>
+                            <div id="collapseLondon4" class="accordion-collapse collapse" aria-labelledby="headingLondon4"
+                                data-bs-parent="#accordionLondon">
+                                <div class="accordion-body"><p>51.5074° N, 0.1278° W</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLondon5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLondon5" aria-expanded="false" aria-controls="collapseLondon5">
+                                    Fact
+                                </button>
+                            </h2>
+                            <div id="collapseLondon5" class="accordion-collapse collapse" aria-labelledby="headingLondon5"
+                                data-bs-parent="#accordionLondon">
+                                <div class="accordion-body"><p>Home to the British Museum, which houses a vast collection of world art and artifacts. London has more than 170 museums.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="./images/uk_flag.png" alt="London" class="destination-img" width="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- BARCELONA -->
+        <section class="mb-5">
+            <a id="barcelona"></a>
+            <h2 class="mb-4">Barcelona</h2>
+            <div class="row align-items-center mb-3">
+                <div class="col-md-5">
+                    <div id="carouselBarcelona" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/barcelona.jpg" class="d-block w-100" alt="Barcelona01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/barcelona02.jpg" class="d-block w-100" alt="Barcelona02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/barcelona03.jpg" class="d-block w-100" alt="Barcelona03">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBarcelona"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselBarcelona"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="destination-description"> Barcelona is a Mediterranean city famous for Gaudí’s architecture,
+                        lively beaches, and a rich artistic spirit.</p>
+                </div>
+            </div>
+            <div class="row align-items-center fun-facts">
+                <div class="col-md-8">
+                    <h3>Fun Facts:</h3>
+                    <div class="accordion" id="accordionBarcelona">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBarcelona1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBarcelona1" aria-expanded="false" aria-controls="collapseBarcelona1">
+                                    Province/State
+                                </button>
+                            </h2>
+                            <div id="collapseBarcelona1" class="accordion-collapse collapse" aria-labelledby="headingBarcelona1"
+                                data-bs-parent="#accordionBarcelona">
+                                <div class="accordion-body"><p>Catalonia</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBarcelona2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBarcelona2" aria-expanded="false" aria-controls="collapseBarcelona2">
+                                    Country
+                                </button>
+                            </h2>
+                            <div id="collapseBarcelona2" class="accordion-collapse collapse" aria-labelledby="headingBarcelona2"
+                                data-bs-parent="#accordionBarcelona">
+                                <div class="accordion-body"><p>Spain</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBarcelona3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBarcelona3" aria-expanded="false" aria-controls="collapseBarcelona3">
+                                    Population
+                                </button>
+                            </h2>
+                            <div id="collapseBarcelona3" class="accordion-collapse collapse" aria-labelledby="headingBarcelona3"
+                                data-bs-parent="#accordionBarcelona">
+                                <div class="accordion-body"><p>~5.5 million (metro)</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBarcelona4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBarcelona4" aria-expanded="false" aria-controls="collapseBarcelona4">
+                                    Latitude & Longitude
+                                </button>
+                            </h2>
+                            <div id="collapseBarcelona4" class="accordion-collapse collapse" aria-labelledby="headingBarcelona4"
+                                data-bs-parent="#accordionBarcelona">
+                                <div class="accordion-body"><p>41.3851° N, 2.1734° E</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBarcelona5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBarcelona5" aria-expanded="false" aria-controls="collapseBarcelona5">
+                                    Fact
+                                </button>
+                            </h2>
+                            <div id="collapseBarcelona5" class="accordion-collapse collapse" aria-labelledby="headingBarcelona5"
+                                data-bs-parent="#accordionBarcelona">
+                                <div class="accordion-body"><p>Home to the famous Sagrada Familia basilica, 140+ years in the making.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="./images/spain_flag.png" alt="Barcelona" class="destination-img" width="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW YORK CITY -->
+        <section class="mb-5">
+            <a id="nyc"></a>
+            <h2 class="mb-4">New York City</h2>
+            <div class="row align-items-center mb-3">
+                <div class="col-md-5">
+                    <div id="carouselNYC" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/nyc.jpg" class="d-block w-100" alt="NYC01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/nyc02.jpg" class="d-block w-100" alt="NYC02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/nyc03.jpg" class="d-block w-100" alt="NYC03">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNYC"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNYC"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="destination-description"> New York City, “the city that never sleeps,” is known for Times
+                        Square, Central Park, and the Statue of Liberty.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center fun-facts">
+                <div class="col-md-8">
+                    <h3>Fun Facts:</h3>
+                    <div class="accordion" id="accordionNYC">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNYC1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNYC1" aria-expanded="false" aria-controls="collapseNYC1">
+                                    Province/State
+                                </button>
+                            </h2>
+                            <div id="collapseNYC1" class="accordion-collapse collapse" aria-labelledby="headingNYC1"
+                                data-bs-parent="#accordionNYC">
+                                <div class="accordion-body"><p>New York</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNYC2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNYC2" aria-expanded="false" aria-controls="collapseNYC2">
+                                    Country
+                                </button>
+                            </h2>
+                            <div id="collapseNYC2" class="accordion-collapse collapse" aria-labelledby="headingNYC2"
+                                data-bs-parent="#accordionNYC">
+                                <div class="accordion-body"><p>United States</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNYC3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNYC3" aria-expanded="false" aria-controls="collapseNYC3">
+                                    Population
+                                </button>
+                            </h2>
+                            <div id="collapseNYC3" class="accordion-collapse collapse" aria-labelledby="headingNYC3"
+                                data-bs-parent="#accordionNYC">
+                                <div class="accordion-body"><p>~8.4 million (metro), ~1.6 million (city)</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNYC4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNYC4" aria-expanded="false" aria-controls="collapseNYC4">
+                                    Latitude & Longitude
+                                </button>
+                            </h2>
+                            <div id="collapseNYC4" class="accordion-collapse collapse" aria-labelledby="headingNYC4"
+                                data-bs-parent="#accordionNYC">
+                                <div class="accordion-body"><p>40.7128° N, 74.0060° W</p></div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNYC5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNYC5" aria-expanded="false" aria-controls="collapseNYC5">
+                                    Fact
+                                </button>
+                            </h2>
+                            <div id="collapseNYC5" class="accordion-collapse collapse" aria-labelledby="headingNYC5"
+                                data-bs-parent="#accordionNYC">
+                                <div class="accordion-body"><p>Home to the busiest subway system in the world. It has the Statue of Liberty and Central Park.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="./images/us_flag.png" alt="United States" class="destination-img" width="400">
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-3 sticky-footer">
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

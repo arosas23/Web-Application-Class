@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom, #EAF6F6, #d4f7f7);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #014a53;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #006D77;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand:hover, .navbar .nav-link:hover {
+    color: #A8E6CF !important;
+}
+
+
+.navbar .dropdown-menu {
+    background-color: #49aeb8;
+    border-radius: 10px;
+}
+
+.navbar .dropdown-item {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #007C91;
+    color: white;
+}
+
+/* Video */
+.arrow-down {
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.arrow-down:hover {
+    transform: translateY(5px);
+}
+
+.text-center {
+    position: relative;
+    top: 90px;
+}
+
+/* Headers */
+h1 {
+    font-family: 'Sacramento', cursive;
+    background: rgba(73, 174, 184, 0.75);
+    backdrop-filter: blur(5px);
+    font-size: 8rem;
+    color: #012930;
+     padding: 2rem 4rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    letter-spacing: 3px;
+    border-radius: 20px; 
+    display: inline-block; 
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #01665c;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #009688;
+    margin-top: 15px;
+}
+
+/* Destination sections */
+.destination-description {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-description:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-button {
+    background-color: #49aeb8;
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    background-color: #3a9ca7;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #3a9ca7;
+    color: white;
+    box-shadow: inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    color: #014a53;
+    font-size: 1.1rem;
+    border-top: 1px solid #ffffff;
+}
+
+.accordion-button {
+    border-radius: 10px !important;
+}
+
+.accordion-item + .accordion-item {
+    margin-top: 8px;
+}
+
+.destination-img {
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 120px;
+}
+
+.destination-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Back button */
+.sticky-footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;         
+  background-color: #d4f7f7; 
+  z-index: 1000;
+  padding: 15px 0;      
+}
+
+/* Botón */
+footer .btn {
+  background-color: #49aeb8;
+  border: none;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+footer .btn:hover {
+  background-color: #3a9ca7;
+}
