@@ -1,0 +1,279 @@
+/*Global*/
+body {
+    background: linear-gradient(to bottom, #EAF6F6, #d4f7f7);
+    font-family: 'Merriweather', serif;
+    color: #000c4e;
+    margin: 0;
+    padding: 0;
+}
+
+/*Links*/
+a{
+    text-decoration: none; 
+    font-weight: bold;    
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #009688;
+    text-shadow: 1px 1px 6px rgba(0, 150, 136, 0.4);
+}
+
+/*Headers*/
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: #007C91;
+    margin: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #01665c;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #009688;
+    margin-top: 25px;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #006D77;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar .nav-brand, .navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand:hover, .navbar .nav-link:hover {
+    color: #A8E6CF !important;
+}
+
+
+.navbar .dropdown-menu {
+    background-color: #49aeb8;
+    border-radius: 10px;
+}
+
+.navbar .dropdown-item {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #007C91;
+    color: white;
+}
+
+/* Card Quote */
+.card-header {
+    background-color: #007C91;
+    font-weight: bold;
+    color: white;
+}
+
+.card-body {
+    font-style: italic;
+    color: #003a44;
+}
+
+/*hr separator*/
+hr {
+    border: none;                  
+    border-top: 6px dotted #EAF6F6; 
+    border-bottom: none;           
+    width: 4%;                     
+    margin: 40px auto; 
+}
+
+/*Logos*/
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    object-fit: contain;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Skilss Section */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    font-weight: bold;
+    color: #000c4e;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.progress {
+    background-color: #c8f1ed;
+    border-radius: 12px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #006D77;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+}
+
+/* Famous People Card */
+.row.text-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card-famous {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.card-famous img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-famous .card-body {
+    padding: 20px;
+}
+
+.card-famous .btn-primary {
+    background-color: #006D77;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.card-famous .btn-primary:hover {
+    background-color: #49aeb8;
+}
+
+/*Tables*/
+.table-bordered {
+    background-color: #ffffff;
+    border: 2px solid #006D77;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.table-bordered td, 
+.table-bordered th {
+    border: 1px solid #006D77;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.table-bordered thead {
+    background-color: #007C91;
+    color: white;
+}
+
+/*Form*/
+form {
+    border: 3px dotted #006D77;
+    background-color: #c8f1ed;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+input, select, textarea {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #EDF6F9;
+}
+
+button {
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #006D77;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004e54;
+}
+
+/*Images*/
+img.img-fluid.rounded {
+    border-radius: 20px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/*Adjusting sizes for smaller screens*/
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem; 
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .row.align-items-center {
+    text-align: center;
+  }
+
+  .row.align-items-center img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-famous {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.85rem;
+  }
+}
+
