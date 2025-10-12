@@ -1,0 +1,17 @@
+{
+  "name": "read-file-example",
+  "version": "1.0.0",
+  "description": "Read a file example",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

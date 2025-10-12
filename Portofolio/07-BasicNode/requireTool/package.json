@@ -1,0 +1,17 @@
+{
+  "name": "star-wars-quote",
+  "version": "1.0.0",
+  "description": "A simple star wars quote random project",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "star-wars-quotes": "^1.0.2"
+  }
+}

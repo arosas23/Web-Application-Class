@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-node",
+  "version": "1.0.0",
+  "description": "A simple Hello World Node.js project",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
