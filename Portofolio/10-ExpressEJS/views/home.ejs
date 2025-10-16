@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%- include("partials/header", { name: name }) %>
+
+        <h2>Hi, <%= name %>!</h2>
+        <p>Welcome!</p>
+
+        <h3>Posts</h3>
+
+        <ul>
+            <% if (posts.length === 0) { %>
+                <li>No posts yet</li>
+            <% } else { %>
+                <% posts.forEach((p, i) => { %>
+                    <li>
+                        <strong><%= p.title %></strong>:
+                        <%= p.content.length > 100 ? p.content.substring(0, 100) + "..." : p.content %>
+                        <a href="/post/<%= i %>">Read more</a>
+                    </li>
+                <% }) %>
+            <% } %>
+        </ul>
+
+        <hr>
+
+        <h3>Add new post</h3>
+        <form action="/add-post" method="post">
+            <label>Title:</label>
+            <input type="text" name="title" required><br>
+            <label>Content:</label><br>
+            <textarea name="content" row="4" cols="50" required></textarea><br>
+            <input type="submit" value="Add">
+        </form>
+
+        <%- include("partials/footer") %>
+</body>
+
+</html>

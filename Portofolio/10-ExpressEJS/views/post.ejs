@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%- include("partials/header") %>
+
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+
+        <form action="/edit-post/<%= index %>" method="post">
+            <textarea name="content" rows="4" cols="50"><%= post.content %></textarea>
+            <input type="submit" value="Keep changes">
+        </form>
+
+        <form action="/delete-post/<%= index %>" method="post" style="margin-top:10px;">
+            <input type="submit" value="Delete post">
+        </form>
+
+        <a href="/home">Back home</a>
+        
+
+        <%- include("partials/footer") %>
+</body>
+
+</html>
