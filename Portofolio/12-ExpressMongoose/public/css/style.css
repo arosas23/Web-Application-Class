@@ -1,0 +1,145 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: beige !important;
+}
+
+img {
+    width: 80px;
+}
+
+#num,
+#code {
+    width: 35px;
+}
+
+/*
+form input,
+select {
+    border-style: none;
+}
+
+input[type=text]:focus {
+    border: 4px solid #c9b220;
+}
+*/
+
+:root {
+    --text: #5b5c33;
+    --accent: #c9b220;
+    --cancel: #999;
+    --disabled: #ccc;
+}
+
+.f1-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 12px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Logo */
+.f1-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+
+.f1-logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation */
+.f1-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1 auto;
+    margin-left: 300px;
+}
+
+.f1-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.f1-nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    transition: background .12s, color .12s, transform .08s;
+    border-radius: 10px;
+    background-color: #c9b220;
+}
+
+.f1-nav a:hover {
+    background: rgba(255, 159, 74, 0.12);
+    color: #2b1f18;
+    transform: translateY(-1px);
+}
+
+/* Form Styles */
+input[type="text"] {
+    color: #333333;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus {
+    border-color: #ff9f4a;
+    box-shadow: 0 0 5px rgba(255, 159, 74, 0.5);
+}
+
+.submit-btn:enabled{
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.submit-btn:disabled{
+    background: var(--disabled);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.cancel-btn {
+    background: var(--cancel);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}

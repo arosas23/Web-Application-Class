@@ -1,0 +1,90 @@
+<div class="container mt-1">
+    <form id="updateDriverForm">
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="num">Number: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:60px;" maxlength="3" class="form-control form-control-sm mb-2" type="text"
+                    name="num" id="numU" placeholder="Num" required />
+            </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="code">Code: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:60px" maxlength="3" class="form-control form-control-sm mb-2" type="text"
+                    name="codeU" id="codeU" placeholder="Code" disabled />
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="name">Name: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:450px" class="form-control form-control-sm mb-2" type="text" name="nameU" id="nameU"
+                    placeholder="Name" disabled />
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="lname">Last name: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:425px" class="form-control form-control-sm mb-2" type="text" name="lnameU"
+                    id="lnameU" placeholder="Last name" disabled />
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="dob">Date of birth: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:150px" class="form-control form-control-sm mb-2" type="date" name="dobU" id="dobU"
+                    disabled />
+            </div>
+        </div>
+
+        <label for="url">Biography URL: </label>
+        <input style="width:550px" class="form-control form-control-sm mb-2" type="url" name="urlU" id="urlU"
+            disabled />
+
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="nation">Nationality: </label>
+            </div>
+            <div class="col-auto">
+                <select class="dropdown-toggle form-control-sm mb-2" name="nationU" id="nationU" disabled>
+                    <option value="">Loading…</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="team">Team: </label>
+            </div>
+            <div class="col-auto">
+                <select class="dropdown-toggle form-control-sm mb-2" name="teamU" id="teamU" disabled>
+                    <option value="">Loading…</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+        <div class="text-center">
+            <button id="searchBtn" class="submit-btn" type="button">Search</button>
+            <button id="updateBtn" class="submit-btn" type="button" disabled>Update</button>
+            <button id="cancelBtn" class="cancel-btn" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
+        </div>
+    </form>
+    
+    <script src="/js/render_options.js"></script>
+    <script src="/js/updateForm_handler.js"></script>
+</div>

@@ -1,0 +1,87 @@
+<div class="container mt-1">
+    <form id="newDriverForm" action="/drivers" method="post">
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="num">Number: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:60px;" maxlength="3" class="form-control form-control-sm mb-2" type="text"
+                    name="num" id="num" placeholder="Num" required />
+            </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="code">Code: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:60px" maxlength="3" class="form-control form-control-sm mb-2" type="text"
+                    name="code" id="code" placeholder="Code" />
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="name">Name: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:450px" class="form-control form-control-sm mb-2" type="text" name="name" id="name"
+                    placeholder="Name" />
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="lname">Last name: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:425px" class="form-control form-control-sm mb-2" type="text" name="lname" id="lname"
+                    placeholder="Last name" />
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="dob">Date of birth: </label>
+            </div>
+            <div class="col-auto">
+                <input style="width:150px" class="form-control form-control-sm mb-2" type="date" name="dob" id="dob" />
+            </div>
+        </div>
+
+        <label for="url">Biography URL: </label>
+        <input style="width:550px" class="form-control form-control-sm mb-2" type="url" name="url" id="url" />
+
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="nation">Nationality: </label>
+            </div>
+            <div class="col-auto">
+                <select class="dropdown-toggle form-control-sm mb-2" name="nation" id="nation" >
+                    <option value="">Loading…</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="team">Team: </label>
+            </div>
+            <div class="col-auto">
+                <select class="dropdown-toggle form-control-sm mb-2" name="team" id="team" >
+                    <option value="">Loading…</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+        <div class="text-center">
+            <button id="submitBtn" class="submit-btn" type="button ">Submit</button>
+            <button id="cancelBtn" class="cancel-btn" data-bs-dismiss="offcanvas" aria-label="Close" >Cancel</button>
+        </div>
+    </form>
+
+    <script src="/js/render_options.js"></script>
+    <script src="/js/newForm_handler.js"></script>
+</div>
