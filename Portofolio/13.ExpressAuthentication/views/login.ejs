@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="/login" method="post">
+    <input name="username" placeholder="Username" required>
+    <input name="password" type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <p>Or sign in with Google</p>
+  <a href="/auth/google"><button>Sign in with Google</button></a>
+
+  <p>Don't have account? <a href="/register">Register</a></p>
+</body>
+</html>
