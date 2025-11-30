@@ -8,6 +8,10 @@ A React application showcasing Star Wars episodes with an interactive movie gall
 - Backend: Express server in `server/` that provides API endpoints and seeds MongoDB from `server/data.js`.
 - Images: served from the frontend `public/images/` (CRA static public folder).
 
+## Instructions
+npm install (installs dependencies)
+npm run dev (runs frontend + backend together)
+npm run build (creates de production build)
 
 ## Quick start (development)
 
